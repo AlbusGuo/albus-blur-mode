@@ -7,6 +7,10 @@ export interface BlurSettings {
     presets: string[];
     keywords: string[];
     isDebugMode: boolean;
+    cursorTrailText: string;
+    enableCursorTrail: boolean;
+    trailSpeed: number;
+    characterSpacing: number;
 }
 
 export const DEFAULT_SETTINGS: BlurSettings = {
@@ -16,6 +20,10 @@ export const DEFAULT_SETTINGS: BlurSettings = {
     presets: [],
     keywords: [],
     isDebugMode: false,
+    cursorTrailText: 'trail',
+    enableCursorTrail: true,
+    trailSpeed: 0.05,
+    characterSpacing: 0.6,
 };
 
 export interface BlurPluginInterface extends Plugin {
